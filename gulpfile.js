@@ -13,6 +13,8 @@ sass.compiler = require('node-sass');
 
 //----------------------gulp image-------------------------//
 
+
+
 gulp.task('img', () =>
     gulp.src('app/img/*')
         .pipe(imagemin())
@@ -71,8 +73,13 @@ gulp.task('libs', () =>
         .pipe(gulp.dest('dist/libs'))
 );
 
+gulp.task('svg', () =>
+    gulp.src('app/img/svg/*')
+        .pipe(gulp.dest('dist/img/svg'))
+);
 
-gulp.task('build', gulp.parallel('html', 'css', 'uglify', 'fonts', 'libs'));
+
+gulp.task('build', gulp.parallel('html', 'css', 'uglify', 'fonts', 'libs', 'svg'));
 
 //--------------------gulp default------------------------//
 gulp.task('browser-sync', function () {

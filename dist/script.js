@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(".gallery__items").slick({slidesToShow:1,slidesToScroll:1,dots:!0,infinite:!0,autoplay:!0,speed:1e3,autoplaySpeed:3e3,fade:!0,cssEase:"linear",pauseOnFocus:!1});
