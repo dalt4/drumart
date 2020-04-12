@@ -149,3 +149,24 @@ const Ajax_mail = (form) => {
 
 Ajax_mail($(".header__form-online"));
 Ajax_mail($(".header__form-offline"));
+
+//----------------------------langswitch---------------------------//
+
+const langSwitcher_ru = document.querySelector('.header__lang-switch.est'),
+      langSwitcher_est = document.querySelector('.header__lang-switch.ru');
+let ruText = document.querySelectorAll('.ru');
+let estText = document.querySelectorAll('.est');
+
+langSwitcher_est.addEventListener('click', () => {
+    for (let i =0; i < ruText.length; i++) {
+        ruText[i].classList.add('hide');
+        estText[i].classList.remove('hide');
+    }
+});
+
+langSwitcher_ru.addEventListener('click', () => {
+    for (let i =0; i < ruText.length; i++) {
+        estText[i].classList.add('hide');
+        ruText[i].classList.remove('hide');
+    }
+});
