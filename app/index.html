@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+          content="width=device-width, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Drum Art School - Барабанная школа. Опытный учитель научит всем техникам игры на барабанах"/>
     <meta name="keywords" content="drum art school, барабанная школа, уроки барабанов, учитель барабанов"/>
     <title>Drum Art School</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="libs/slick.css"/>
     <link rel="stylesheet" href="libs/slick-theme.css"/>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+
 <header class="header">
+    <div class="magnific__frame invis">
+        <div class="magnific__body">
+            <div class="magnific__close-button"></div>
+            <div class="magnific__logo">
+                <img src="img/svg/drum_logo2.svg" alt="tam-tam" class="magnific__logo-pic">
+            </div>
+            <h2 class="magnific__title">DRUM <span>ART</span> SCHOOL</h2>
+            <div class="magnific__content invis">
+                <div class="magnific__content-item">
+                    <h3 class="magnific__content-item_title">Practice Pad</h3>
+                    <div class="magnific__content-item_pic"></div>
+                    <p class="magnific__content-item_desc">50&#8364;</p>
+                </div>
+                <div class="magnific__content-button"></div>
+                <div class="magnific__content-item">
+                    <h3 class="magnific__content-item_title">drumsticks</h3>
+                    <div class="magnific__content-item_pic"></div>
+                    <p class="magnific__content-item_desc">10&#8364;</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <nav class="header__nav">
             <div class="header__logo">
@@ -27,8 +57,6 @@
                 <div class="header__lang-switch header__nav-link est hide">Rus</div>
             </div>
         </nav>
-        <h2 class="header__promo ru">Оставьте заявку и получите первый урок со скидкой: 15€</h2>
-        <h2 class="header__promo est hide">Esita taotlus ja saad esimese tunni allahindlusega: 15 €</h2>
         <div class="header__intro">
             <div class="header__description">
                 <h2 class="header__description-h2 ru">Барабанная школа</h2>
@@ -38,6 +66,9 @@
                 <h3 class="header__description-h3 est hide">Koht, kus sünnivad <br/>trummarid</h3>
             </div>
             <form class="header__form-online header__form">
+                <h2 class="header__promo ru">Оставьте заявку и получите первый урок со скидкой: 15€</h2>
+                <h2 class="header__promo est hide">Esita taotlus ja saad esimese tunni allahindlusega: 15 €</h2>
+
                 <h3 class="header__form-title ru">Форма Регистрации<br/><sub>на онлайн урок</sub></h3>
                 <h3 class="header__form-title est hide">Registreerimisvorm<br/><sub>veebitunnis</sub></h3>
 
@@ -47,21 +78,21 @@
                 <input type="hidden" name="form_subject" value="Онлайн урок!">
                 <!-- END Hidden Required Fields -->
 
-                <label for="i1"></label>
-                <label for="i2"></label>
-                <label for="i3"></label>
+                <label for="i_1">1</label>
+                <label for="i_2">2</label>
+                <label for="i_3">3</label>
 
-                <label for="i1_1"></label>
-                <label for="i2_1"></label>
-                <label for="i3_1"></label>
+                <label for="i1_1">1</label>
+                <label for="i2_1">2</label>
+                <label for="i3_1">3</label>
 
-                <input class="ru" name="Имя" type="text" id="i1" placeholder="Имя" required>
+                <input class="ru" name="Имя" type="text" id="i_1" placeholder="Имя" required>
                 <input class="est hide" name="Имя" type="text" id="i1_1" placeholder="Nimi" required>
 
-                <input class="ru" name="Email" type="email" id="i2" placeholder="Э-мейл">
+                <input class="ru" name="Email" type="email" id="i_2" placeholder="Э-мейл">
                 <input class="est hide" name="Email" type="email" id="i2_1" placeholder="E-post">
 
-                <input class="ru" name="Телефон" type="tel" id="i3" placeholder="Телефон" required>
+                <input class="ru" name="Телефон" type="tel" id="i_3" placeholder="Телефон" required>
                 <input class="est hide" name="Телефон" type="tel" id="i3_1" placeholder="Telefon" required>
 
                 <button class="ru" type="submit">Отправить</button>
@@ -77,21 +108,20 @@
                 <input type="hidden" name="form_subject" value="Живой урок!">
                 <!-- END Hidden Required Fields -->
 
-                <label for="i21"></label>
-                <label for="i22"></label>
-                <label for="i23"></label>
+                <label for="i_21">1</label>
+                <label for="i_22">2</label>
+                <label for="i_23">3</label>
+                <label for="i21_1">1</label>
+                <label for="i22_1">2</label>
+                <label for="i23_1">3</label>
 
-                <label for="i21_1"></label>
-                <label for="i22_1"></label>
-                <label for="i23_1"></label>
-
-                <input class="ru" name="Имя" type="text" id="i21" placeholder="Имя" required>
+                <input class="ru" name="Имя" type="text" id="i_21" placeholder="Имя" required>
                 <input class="est hide" name="Имя" type="text" id="i21_1" placeholder="Nimi" required>
 
-                <input class="ru" name="Email" type="email" id="i22" placeholder="Э-мейл">
+                <input class="ru" name="Email" type="email" id="i_22" placeholder="Э-мейл">
                 <input class="est hide" name="Email" type="email" id="i22_1" placeholder="E-post">
 
-                <input class="ru" name="Телефон" type="tel" id="i23" placeholder="Телефон" required>
+                <input class="ru" name="Телефон" type="tel" id="i_23" placeholder="Телефон" required>
                 <input class="est hide" name="Телефон" type="tel" id="i23_1" placeholder="Telefon" required>
 
                 <button class="ru" type="submit">Отправить</button>
@@ -167,6 +197,10 @@
                         <iframe class="video__element" title="first_video" src="https://www.youtube.com/embed/Lf9iZywkuqU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                <div class="main__links">
+                    <div class="main__link main__links-form_button">Регистрация на урок</div>
+                    <div class="main__link main__links-bying_button">Покупка инструмента</div>
+                </div>
                 <div class="main__video-item">
                     <div class="videos__wrapper">
                         <div class="videos__item"></div>
@@ -180,18 +214,19 @@
         <div class="wrapper">
             <div class="gallery__items">
                 <div class="gallery__item"><img src="img/1-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img src="img/2-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img src="img/3-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item gallery__item_split">
-                    <img src="img/4-min.jpg" alt="Photo" class="gallery__item-pic">
-                    <img src="img/7-min.jpg" alt="Photo" class="gallery__item-pic">
-                </div>
-                <div class="gallery__item"><img src="img/5-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img src="img/6-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/2-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/3-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/4-7.png" alt="Photo" class="gallery__item-pic"></div>
+                <!--                <div class="gallery__item gallery__item_split">-->
+                <!--                    <img src="img/4-min.jpg" alt="Photo" class="gallery__item-pic">-->
+                <!--                    <img src="img/7-min.jpg" alt="Photo" class="gallery__item-pic">-->
+                <!--                </div>-->
+                <div class="gallery__item"><img data-lazy="img/5-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/6-min.jpg" alt="Photo" class="gallery__item-pic"></div>
 
-                <div class="gallery__item"><img src="img/8-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img src="img/9-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img src="img/10-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/8-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/9-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item"><img data-lazy="img/10-min.jpg" alt="Photo" class="gallery__item-pic"></div>
             </div>
         </div>
     </div>

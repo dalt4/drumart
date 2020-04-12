@@ -113,6 +113,7 @@
 //-----------------------------slick------------------------//
 
 $('.gallery__items').slick({
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -170,3 +171,34 @@ langSwitcher_ru.addEventListener('click', () => {
         ruText[i].classList.remove('hide');
     }
 });
+
+
+//---------------------------popups---------------------------------//
+
+const form_trigger = document.querySelector('.main__links-form_button'),
+      body = document.querySelector('body'),
+      bying_trigger = document.querySelector('.main__links-bying_button'),
+      close_button = document.querySelector('.magnific__close-button'),
+      magnific_frame = document.querySelector('.magnific__frame'),
+      magnific_content = document.querySelector('.magnific__content'),
+      online_form = document.querySelector('.header__form-online');
+
+form_trigger.addEventListener('click', () => {
+    magnific_frame.classList.remove('invis');
+    online_form.classList.add('triggered');
+    body.classList.add('under__pop')
+});
+
+bying_trigger.addEventListener('click', () => {
+    magnific_frame.classList.remove('invis');
+    magnific_content.classList.remove('invis');
+    body.classList.add('under__pop')
+});
+
+close_button.addEventListener('click', () => {
+    magnific_frame.classList.add('invis');
+    online_form.classList.remove('triggered');
+    magnific_content.classList.add('invis');
+    body.classList.remove('under__pop')
+});
+
