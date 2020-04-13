@@ -613,7 +613,7 @@ button:active {
 
 .header {
   height: 100vh;
-  background: url("img/header_bg.png") no-repeat center 100%/cover;
+  background: url("img/header_bg_blue-min.png") no-repeat center 100%/cover;
   margin-bottom: -400px;
   padding-top: 20px;
   position: relative;
@@ -1119,6 +1119,8 @@ button:active {
 .footer {
   height: 1000px;
   background: #101A2B;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__content {
@@ -1134,7 +1136,7 @@ button:active {
   top: 0;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  background: url("img/footer_ribbon.png") no-repeat center/auto 100%;
+  background: url("img/footer_ribbon-blue.png") no-repeat center/auto 100%;
   display: flex;
   justify-content: center;
   align-items: center;
