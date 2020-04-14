@@ -178,11 +178,17 @@ langSwitcher_ru.addEventListener('click', () => {
 
 const body = document.querySelector('body'),
     bying_trigger = document.querySelector('.main__links-bying_button'),
+    bying_trigger2 = document.querySelector('.main__links-bying_button.est'),
     close_button = document.querySelector('.magnific__close-button'),
     magnific_frame = document.querySelector('.magnific__frame');
 
 
 bying_trigger.addEventListener('click', () => {
+    magnific_frame.classList.remove('invis');
+    body.classList.add('under__pop')
+});
+
+bying_trigger2.addEventListener('click', () => {
     magnific_frame.classList.remove('invis');
     body.classList.add('under__pop')
 });
