@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="description" content="Drum Art School - Барабанная школа. Опытный учитель научит всем техникам игры на барабанах"/>
+    <meta name="description"
+          content="Drum Art School - Барабанная школа. Опытный учитель научит всем техникам игры на барабанах"/>
     <meta name="keywords" content="drum art school, барабанная школа, уроки барабанов, учитель барабанов"/>
     <title>Drum Art School</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -15,12 +16,12 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="libs/slick.css"/>
-    <link rel="stylesheet" href="libs/slick-theme.css"/>
+    <!--    <link rel="stylesheet" href="libs/slick.css"/>-->
+    <!--    <link rel="stylesheet" href="libs/slick-theme.css"/>-->
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
+<!-------------------------------------------------------------header-------------------------------------------------->
 <header class="header">
     <div class="magnific__frame invis">
         <div class="magnific__body">
@@ -29,17 +30,47 @@
                 <img src="img/svg/drum_logo2.svg" alt="tam-tam" class="magnific__logo-pic">
             </div>
             <h2 class="magnific__title">DRUM <span>ART</span> SCHOOL</h2>
-            <div class="magnific__content invis">
+            <div class="magnific__content">
                 <div class="magnific__content-item">
                     <h3 class="magnific__content-item_title">Practice Pad</h3>
                     <div class="magnific__content-item_pic"></div>
-                    <p class="magnific__content-item_desc">50&#8364;</p>
+                    <p class="magnific__content-item_desc"></p>
                 </div>
-                <div class="magnific__content-button"></div>
+                <form class="header__form-online order__form header__form">
+
+                    <h3 class="header__form-title">Купить инструмент<br/><sub>(оставить заявку)</sub></h3>
+                    <!--                    <h3 class="header__form-title est hide">Registreerimisvorm<br/><sub>veebitunnis</sub></h3>-->
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="DRUM ART">
+                    <input type="hidden" name="admin_email" value="drumartschool24@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заказ инструмента!">
+                    <!-- END Hidden Required Fields -->
+
+                    <label for="i_221">1</label>
+                    <label for="i_222">2</label>
+                    <label for="i_223">3</label>
+
+                    <label for="i1_21">1</label>
+                    <label for="i2_21">2</label>
+                    <label for="i3_21">3</label>
+
+                    <input class="ru" name="Name" type="text" id="i_221" placeholder="Имя">
+                    <input class="est hide" name="Name1" type="text" id="i1_21" placeholder="Nimi">
+
+                    <input class="ru" name="Email" type="email" id="i_222" placeholder="Э-мейл">
+                    <input class="est hide" name="Email1" type="email" id="i2_21" placeholder="E-post">
+
+                    <input class="ru" name='phone' type="tel" id="i_223" placeholder="Телефон">
+                    <input class="est hide" name="phone1" type="tel" id="i3_21" placeholder="Telefon">
+
+                    <button class="ru" type="submit">Отправить</button>
+                    <button class="est hide">Saada</button>
+                </form>
                 <div class="magnific__content-item">
                     <h3 class="magnific__content-item_title">drumsticks</h3>
                     <div class="magnific__content-item_pic"></div>
-                    <p class="magnific__content-item_desc">10&#8364;</p>
+                    <p class="magnific__content-item_desc"></p>
                 </div>
             </div>
         </div>
@@ -50,6 +81,9 @@
                 <a href="#" class="header__logo-link"></a>
             </div>
             <div class="header__nav-links">
+                <div class="header__email-button header__order-button header__nav-link main__links-bying_button ru">
+                    Заказать
+                </div>
                 <a href="tel:003725211833" class="header__tel header__nav-link">521-1833</a>
                 <a href="mailto:info@drumart.ee" class="header__email-button header__nav-link ru">Контакт</a>
                 <a href="mailto:info@drumart.ee" class="header__email-button header__nav-link est hide">Kontakt</a>
@@ -65,46 +99,13 @@
                 <h3 class="header__description-h3 ru">Место, где рождаются <br/>Барабанщики</h3>
                 <h3 class="header__description-h3 est hide">Koht, kus sünnivad <br/>trummarid</h3>
             </div>
-            <form class="header__form-online header__form">
-                <h2 class="header__promo ru">Оставьте заявку и получите первый урок со скидкой: 15€</h2>
-                <h2 class="header__promo est hide">Esita taotlus ja saad esimese tunni allahindlusega: 15 €</h2>
-
-                <h3 class="header__form-title ru">Форма Регистрации<br/><sub>на онлайн урок</sub></h3>
-                <h3 class="header__form-title est hide">Registreerimisvorm<br/><sub>veebitunnis</sub></h3>
-
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="DRUM ART">
-                <input type="hidden" name="admin_email" value="info@drumart.ee">
-                <input type="hidden" name="form_subject" value="Онлайн урок!">
-                <!-- END Hidden Required Fields -->
-
-                <label for="i_1">1</label>
-                <label for="i_2">2</label>
-                <label for="i_3">3</label>
-
-                <label for="i1_1">1</label>
-                <label for="i2_1">2</label>
-                <label for="i3_1">3</label>
-
-                <input class="ru" name="Имя" type="text" id="i_1" placeholder="Имя" required>
-                <input class="est hide" name="Имя" type="text" id="i1_1" placeholder="Nimi" required>
-
-                <input class="ru" name="Email" type="email" id="i_2" placeholder="Э-мейл">
-                <input class="est hide" name="Email" type="email" id="i2_1" placeholder="E-post">
-
-                <input class="ru" name="Телефон" type="tel" id="i_3" placeholder="Телефон" required>
-                <input class="est hide" name="Телефон" type="tel" id="i3_1" placeholder="Telefon" required>
-
-                <button class="ru" type="submit">Отправить</button>
-                <button class="est hide" type="submit">Saada</button>
-            </form>
             <form class="header__form-offline header__form">
                 <h3 class="header__form-title ru">Форма Регистрации<br/><sub>на урок в студии</sub></h3>
                 <h3 class="header__form-title est hide">Registreerimisvorm<br/><sub>tunniks stuudios</sub></h3>
 
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="DRUM ART">
-                <input type="hidden" name="admin_email" value="info@drumart.ee">
+                <input type="hidden" name="admin_email" value="drumartschool24@gmail.com">
                 <input type="hidden" name="form_subject" value="Живой урок!">
                 <!-- END Hidden Required Fields -->
 
@@ -115,122 +116,180 @@
                 <label for="i22_1">2</label>
                 <label for="i23_1">3</label>
 
-                <input class="ru" name="Имя" type="text" id="i_21" placeholder="Имя" required>
-                <input class="est hide" name="Имя" type="text" id="i21_1" placeholder="Nimi" required>
+                <input class="ru" name="Имя" type="text" id="i_21" placeholder="Имя">
+                <input class="est hide" name="Имя1" type="text" id="i21_1" placeholder="Nimi">
 
                 <input class="ru" name="Email" type="email" id="i_22" placeholder="Э-мейл">
-                <input class="est hide" name="Email" type="email" id="i22_1" placeholder="E-post">
+                <input class="est hide" name="Email1" type="email" id="i22_1" placeholder="E-post">
 
-                <input class="ru" name="Телефон" type="tel" id="i_23" placeholder="Телефон" required>
-                <input class="est hide" name="Телефон" type="tel" id="i23_1" placeholder="Telefon" required>
+                <input class="ru" name="Телефон" type="tel" id="i_23" placeholder="Телефон">
+                <input class="est hide" name="Телефон1" type="tel" id="i23_1" placeholder="Telefon">
 
                 <button class="ru" type="submit">Отправить</button>
                 <button class="est hide" type="submit">Saada</button>
             </form>
         </div>
     </div>
-    <div class="down__bar"></div>
 </header>
+
+<!------------------------------------------------------------------------main---------------------------------------->
+
 <main class="main">
-    <div class="main__prices">
-        <div class="wrapper">
-            <div class="main__prices-content">
-                <div class="main__prices-logo">
-                    <div class="main__prices-logo_desc ru"></div>
-                    <div class="main__prices-logo_desc est hide"></div>
-                </div>
-                <div class="main__prices-items ru">
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">Для детей 6/8 лет</div>
-                        <div class="prices-item__row">Два урока в неделю</div>
-                        <div class="prices-item__row">60 минут</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">Возраст 9+ лет</div>
-                        <div class="prices-item__row">Один урок в неделю</div>
-                        <div class="prices-item__row">2 часа</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">Возраст 9+ лет</div>
-                        <div class="prices-item__row">Два урока в неделю</div>
-                        <div class="prices-item__row">2 часа</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                </div>
-                <div class="main__prices-items est hide">
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">6 kuni 8-aastastele lastele</div>
-                        <div class="prices-item__row">Kaks tundi nädalas</div>
-                        <div class="prices-item__row">60 minutit</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">Vanus 9+ aastat</div>
-                        <div class="prices-item__row">Üks tund nädalas</div>
-                        <div class="prices-item__row">2 tundi</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                    <div class="main__prices-item">
-                        <div class="prices-item__row"></div>
-                        <div class="prices-item__row">9+ aastat</div>
-                        <div class="prices-item__row">Kaks tundi nädalas</div>
-                        <div class="prices-item__row">2 tundi</div>
-                        <div class="prices-item__row"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="main__video">
         <div class="wrapper">
             <div class="main__video-items">
                 <div class="main__video-item">
                     <div class="videos__wrapper">
                         <div class="videos__item"></div>
-                        <iframe class="video__element" title="first_video" src="https://www.youtube.com/embed/Lf9iZywkuqU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__element" title="first_video"
+                                src="https://www.youtube.com/embed/Lf9iZywkuqU"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="main__links">
-                    <div class="main__link main__links-form_button">Регистрация на урок</div>
-                    <div class="main__link main__links-bying_button">Покупка инструмента</div>
-                </div>
+
+                <form class="header__form-online online_form header__form">
+                    <!--                    <h2 class="header__promo ru">Оставьте заявку и получите первый урок со скидкой: 15€</h2>-->
+                    <!--                    <h2 class="header__promo est hide">Esita taotlus ja saad esimese tunni allahindlusega: 15 €</h2>-->
+
+                    <h3 class="header__form-title ru">Форма Регистрации<br/><sub>на онлайн урок</sub></h3>
+                    <h3 class="header__form-title est hide">Registreerimisvorm<br/><sub>veebitunnis</sub></h3>
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="DRUM ART">
+                    <input type="hidden" name="admin_email" value="drumartschool24@gmail.com">
+                    <input type="hidden" name="form_subject" value="Онлайн урок!">
+                    <!-- END Hidden Required Fields -->
+
+                    <label for="i_1">1</label>
+                    <label for="i_2">2</label>
+                    <label for="i_3">3</label>
+
+                    <label for="i1_1">1</label>
+                    <label for="i2_1">2</label>
+                    <label for="i3_1">3</label>
+
+                    <input class="ru" name="Name" type="text" id="i_1" placeholder="Имя">
+                    <input class="est hide" name="Name1" type="text" id="i1_1" placeholder="Nimi">
+
+                    <input class="ru" name="Email" type="email" id="i_2" placeholder="Э-мейл">
+                    <input class="est hide" name="Email1" type="email" id="i2_1" placeholder="E-post">
+
+                    <input class="ru" name='phone' type="tel" id="i_3" placeholder="Телефон">
+                    <input class="est hide" name="phone1" type="tel" id="i3_1" placeholder="Telefon">
+
+                    <button class="ru" type="submit">Отправить</button>
+                    <button class="est hide">Saada</button>
+                </form>
+
+                <!--                <div class="main__links">-->
+                <!--                    <div class="main__link main__links-form_button">Регистрация на урок</div>-->
+                <!--                    <div class="main__link main__links-bying_button">Покупка инструмента</div>-->
+                <!--                </div>-->
                 <div class="main__video-item">
                     <div class="videos__wrapper">
                         <div class="videos__item"></div>
-                        <iframe class="video__element" title="second_video" src="https://www.youtube.com/embed/9meJ9dVRIfM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__element" title="second_video"
+                                src="https://www.youtube.com/embed/9meJ9dVRIfM"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="main__gallery">
-        <div class="wrapper">
-            <div class="gallery__items">
-                <div class="gallery__item"><img src="img/1-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/2-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/3-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/4-7.png" alt="Photo" class="gallery__item-pic"></div>
-                <!--                <div class="gallery__item gallery__item_split">-->
-                <!--                    <img src="img/4-min.jpg" alt="Photo" class="gallery__item-pic">-->
-                <!--                    <img src="img/7-min.jpg" alt="Photo" class="gallery__item-pic">-->
-                <!--                </div>-->
-                <div class="gallery__item"><img data-lazy="img/5-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/6-min.jpg" alt="Photo" class="gallery__item-pic"></div>
 
-                <div class="gallery__item"><img data-lazy="img/8-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/9-min.jpg" alt="Photo" class="gallery__item-pic"></div>
-                <div class="gallery__item"><img data-lazy="img/10-min.jpg" alt="Photo" class="gallery__item-pic"></div>
             </div>
         </div>
     </div>
+    <div class="main__prices">
+        <div class="wrapper">
+            <div class="main__prices-content">
+                <div class="gallery__item gallery__item4"><img src="img/4-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="gallery__item gallery__item5"><img src="img/5-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+                <div class="main__prices-logo">
+                    <div class="main__prices-logo_desc ru"></div>
+                    <div class="main__prices-logo_desc est hide"></div>
+                </div>
+                <div class="prices__packets">
+                    <div class="prices__packets-title">ВЫберите свой пакет</div>
+                    <div class="prices__packets-nav">
+                        <div class="prices__packets-nav_item active">
+                            <div class="packets-nav_item-pic"></div>
+                            <h3 class="packets-nav_item-title">Онлайн Уроки </h3>
+                            <p class="packets-nav_item-desc">Индивидуально</p>
+                        </div>
+                        <div class="prices__packets-nav_item">
+                            <div class="packets-nav_item-pic"></div>
+                            <h3 class="packets-nav_item-title">Уроки в студии</h3>
+                            <p class="packets-nav_item-desc"> Индивидуально</p>
+                        </div>
+                        <div class="prices__packets-nav_item">
+                            <div class="packets-nav_item-pic"></div>
+                            <h3 class="packets-nav_item-title">Уроки в студии </h3>
+                            <p class="packets-nav_item-desc"> В группе</p>
+                        </div>
+                    </div>
+                    <div class="prices__bottom-line"></div>
+
+                    <div class="prices__packet">
+                        <p class="prices__packet-desc">
+                            Для всех возрастов.<br/>
+                            Длительность занятий 45 минут. 1 урок в неделю.<br/>
+                            Срок действия абонемента - 28 дней с первого
+                            занятия.
+                        </p>
+                        <div class="prices__paket-ticket">
+                            <p class="paket-ticket__desc">АБОНЕМЕНТ х 4 ЗАНЯТИЯ </p>
+                            <p class="paket-ticket__price">60<span>€</span></p>
+                        </div>
+                        <div class="prices__paket-ticket">
+                            <p class="paket-ticket__desc">АБОНЕМЕНТ х 8 ЗАНЯТИЙ</p>
+                            <p class="paket-ticket__price">120<span>€</span></p>
+                        </div>
+                    </div>
+                    <div class="prices__packet hide">
+                        <p class="prices__packet-desc">
+                            Возраст с 6 лет.<br/>
+                            Длительность занятий 45-90 минут. 1 или 2 урока в неделю.<br/>
+                            Срок действия абонемента - 28 дней с первого занятия.
+                        </p>
+                        <div class="prices__paket-ticket">
+                            <p class="paket-ticket__desc">АБОНЕМЕНТ х 4 ЗАНЯТИЯ </p>
+                            <p class="paket-ticket__price">100<span>€</span></p>
+                        </div>
+                        <div class="prices__paket-ticket">
+                            <p class="paket-ticket__desc">АБОНЕМЕНТ х 8 ЗАНЯТИЙ</p>
+                            <p class="paket-ticket__price">200<span>€</span></p>
+                        </div>
+                    </div>
+                    <div class="prices__packet hide">
+                        <p class="prices__packet-desc">
+                            Возраст с 6 лет<br/>
+                            Длительность занятий 90 минут. 1 урок в неделю.<br/>
+                            Срок действия абонемента - 28 дней с первого
+                            занятия.
+                        </p>
+                        <div class="prices__paket-ticket">
+                            <p class="paket-ticket__desc">АБОНЕМЕНТ х 4 ЗАНЯТИЯ </p>
+                            <p class="paket-ticket__price">120<span>€</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="gallery__item gallery__item1"><img src="img/1-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item2"><img src="img/2-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item3"><img src="img/3-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item6"><img src="img/6-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item7"><img src="img/7-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item  gallery__item8"><img src="img/8-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item9"><img src="img/9-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+    <div class="gallery__item gallery__item10"><img src="img/10-min.jpg" alt="Photo" class="gallery__item-pic"></div>
+
 </main>
+
+<!--------------------------------------------------------------------footer------------------------------------------------>
+
 <footer class="footer">
     <div class="wrapper">
         <div class="footer__content">
@@ -247,9 +306,7 @@
                     <img src="img/certificate_60.png" alt="certificate" class="ribbon__sert-pic">
                 </div>
             </div>
-            <div class="header__logo footer__logo">
-                <a href="#" class="header__logo-link"></a>
-            </div>
+
             <div class="footer__contacts">
                 <h2 class="footer__contacts-title">DRUM ART SCHOOL</h2>
                 <a href="tel:003725211833" class="header__tel header__nav-link footer__tel">521-1833</a>
@@ -282,8 +339,11 @@
         </div>
     </div>
 </footer>
+<div class="header__logo footer__logo">
+    <a href="#" class="header__logo-link"></a>
+</div>
 <script src="libs/jquery.min.js"></script>
-<script src="libs/slick.min.js"></script>
+<!--<script src="libs/slick.min.js"></script>-->
 <script src="script.js"></script>
 </body>
 </html>

@@ -112,25 +112,23 @@
 
 //-----------------------------slick------------------------//
 
-$('.gallery__items').slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 3000,
-    fade: true,
-    cssEase: 'linear',
-    pauseOnFocus: false
-});
+// $('.gallery__items').slick({
+//     lazyLoad: 'ondemand',
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     dots: true,
+//     infinite: true,
+//     autoplay: true,
+//     speed: 1000,
+//     autoplaySpeed: 3000,
+//     fade: true,
+//     cssEase: 'linear',
+//     pauseOnFocus: false
+// });
 
 //---------------------------------email------------------------//
 
-//E-mail Ajax Send
-
-const Ajax_mail = (form) => {
+const ajax_mail = (form) => {
     form.submit(function() { //Change
         var th = $(this);
         $.ajax({
@@ -145,16 +143,19 @@ const Ajax_mail = (form) => {
             }, 1000);
         });
         return false;
-    });
+    })
 };
 
-Ajax_mail($(".header__form-online"));
-Ajax_mail($(".header__form-offline"));
+ajax_mail($(".order__form"));
+ajax_mail($(".online_form"));
+ajax_mail($(".header__form-offline"));
+
+
 
 //----------------------------langswitch---------------------------//
 
 const langSwitcher_ru = document.querySelector('.header__lang-switch.est'),
-      langSwitcher_est = document.querySelector('.header__lang-switch.ru');
+    langSwitcher_est = document.querySelector('.header__lang-switch.ru');
 let ruText = document.querySelectorAll('.ru');
 let estText = document.querySelectorAll('.est');
 
@@ -175,30 +176,34 @@ langSwitcher_ru.addEventListener('click', () => {
 
 //---------------------------popups---------------------------------//
 
-const form_trigger = document.querySelector('.main__links-form_button'),
-      body = document.querySelector('body'),
-      bying_trigger = document.querySelector('.main__links-bying_button'),
-      close_button = document.querySelector('.magnific__close-button'),
-      magnific_frame = document.querySelector('.magnific__frame'),
-      magnific_content = document.querySelector('.magnific__content'),
-      online_form = document.querySelector('.header__form-online');
+const body = document.querySelector('body'),
+    bying_trigger = document.querySelector('.main__links-bying_button'),
+    close_button = document.querySelector('.magnific__close-button'),
+    magnific_frame = document.querySelector('.magnific__frame');
 
-form_trigger.addEventListener('click', () => {
-    magnific_frame.classList.remove('invis');
-    online_form.classList.add('triggered');
-    body.classList.add('under__pop')
-});
 
 bying_trigger.addEventListener('click', () => {
     magnific_frame.classList.remove('invis');
-    magnific_content.classList.remove('invis');
     body.classList.add('under__pop')
 });
 
 close_button.addEventListener('click', () => {
     magnific_frame.classList.add('invis');
-    online_form.classList.remove('triggered');
-    magnific_content.classList.add('invis');
     body.classList.remove('under__pop')
 });
+
+//------------------------packet switch-------------------------------//
+
+const links = $('.prices__packets-nav_item'),
+      blocks = $('.prices__packet');
+
+$(links).on('click', function () {
+    $(links).removeClass('active');
+    $(this).addClass('active');
+    $(blocks).addClass('hide');
+    $(blocks[$(this).index()]).removeClass('hide');
+
+});
+
+
 
