@@ -363,7 +363,7 @@ body {
   font-family: 'lato', sans-serif;
   overflow-x: hidden ;
   color: white;
-  background: #F2F2F2;
+  background: #F2F2F2 url('img/main_bg.png') repeat-y 0 866px/ 100% auto;
   margin: 0;
   padding: 0;
   position: relative;
@@ -534,11 +534,11 @@ body form.order__form {
 
 .header {
   height: 150vh;
-  background: url("img/header_bg.png") no-repeat center 100%/cover;
+  background: url("img/header_bg-min.png") no-repeat center 100%/cover;
   margin-bottom: -400px;
   padding-top: 20px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header__nav {
@@ -793,7 +793,6 @@ form.header__form-online input {
 //-------------------------------main styles start-----------------------//
 
 .main {
-  background: url('img/main_bg.png') repeat-y 0 919px/ 100% auto;
   position: relative;
   z-index: 1;
   padding-top: 500px;
@@ -802,6 +801,8 @@ form.header__form-online input {
 
 .main__video {
   margin-bottom: 400px;
+  position: relative;
+  z-index: 10;
 }
 
 .main__video-items {
@@ -1133,15 +1134,15 @@ form.header__form-online input {
 }
 
 .gallery__item4 {
-  top: -300px;
-  right: 200px;
+  top: 2060px;
+  left: calc(50% + 400px);
   max-width: 150px;
-  transform: rotateZ(15deg);
+  transform: rotateZ(0);
 }
 
 .gallery__item5 {
-  top: -400px;
-  right: -200px;
+  top: 2060px;
+  left: calc(50% + 10px);
   max-width: 300px;
   transform: rotateZ(-25deg);
 }
