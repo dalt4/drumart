@@ -1156,8 +1156,9 @@ form.header__form-online input {
   width: 245px;
   height: 100%;
   font-size: 16px;
-  line-height: 16px;
-  font-weight: 600; }
+  line-height: 22px;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 .paket-ticket__price {
   display: -webkit-box;
@@ -1182,7 +1183,7 @@ form.header__form-online input {
 
 .prices__packets::after {
   content: 'DRUM ART SCHOOL';
-  top: 50%;
+  bottom: 10%;
   left: -10px;
   position: absolute;
   -webkit-transform-origin: 0 100%;
@@ -1463,6 +1464,8 @@ form.header__form-online input {
   background: url("img/svg/social_links.svg") -92px 0/127px; }
 
 @media screen and (max-width: 960px) {
+  .packets-nav_item-title.est {
+    font-size: 10px; }
   div.gallery__item {
     display: none; }
   .header {

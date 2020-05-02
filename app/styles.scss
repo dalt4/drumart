@@ -1074,8 +1074,9 @@ form.header__form-online input {
   width: 245px;
   height: 100%;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .paket-ticket__price {
@@ -1094,7 +1095,7 @@ form.header__form-online input {
 
 .prices__packets::after {
   content: 'DRUM ART SCHOOL';
-  top: 50%;
+  bottom: 10%;
   left: -10px;
   position: absolute;
   transform-origin: 0 100%;
@@ -1352,6 +1353,10 @@ form.header__form-online input {
 //------------------------------------------------media 960------------------------------------//
 
 @media screen and (max-width: 960px) {
+
+  .packets-nav_item-title.est {
+    font-size: 10px;
+  }
 
   div.gallery__item {
     display: none
